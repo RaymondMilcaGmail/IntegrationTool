@@ -1,0 +1,11 @@
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\bin\Debug\netcoreapp3.1\IntegrationTool.Model.deps.json
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\bin\Debug\netcoreapp3.1\IntegrationTool.Model.dll
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\bin\Debug\netcoreapp3.1\IntegrationTool.Model.pdb
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\obj\Debug\netcoreapp3.1\IntegrationTool.Model.AssemblyInfoInputs.cache
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\obj\Debug\netcoreapp3.1\IntegrationTool.Model.AssemblyInfo.cs
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\obj\Debug\netcoreapp3.1\IntegrationTool.Model.csproj.CoreCompileInputs.cache
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\obj\Debug\netcoreapp3.1\IntegrationTool.Model.dll
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\obj\Debug\netcoreapp3.1\IntegrationTool.Model.pdb
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\bin\Debug\netcoreapp3.1\IntegrationTool.Model.runtimeconfig.json
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\bin\Debug\netcoreapp3.1\IntegrationTool.Model.runtimeconfig.dev.json
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool.Model\obj\Debug\netcoreapp3.1\IntegrationTool.Model.genruntimeconfig.cache
