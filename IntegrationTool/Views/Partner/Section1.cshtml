@@ -4,8 +4,6 @@
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
 
-import React from "react";
-
 
 @section JavaScript
 {
@@ -28,8 +26,7 @@ import React from "react";
     <div class="form-group">
         <label class="control-label col-sm-3" for="billerName">Biller Name:</label>
         <div class="col-sm-5">
-            <input type="text" name="billerName" class="form-control forUpdate txtData" value="Partner 1">
-            <label class="lblData forView">Partner 1</label>
+            <input type="text" name="billerName" class="form-control forUpdatedis txtData" value="Partner 1">
         </div>
         <div class="col-sm-4">
             <input type="button" value="Edit" class="btnEdit forView"  />
@@ -39,9 +36,10 @@ import React from "react";
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3">Accounting Code :</label>
+        <label class="control-label col-sm-3" for="accountingCode">Accounting Code :</label>
         <div class="col-sm-5">
-            <label class="lblData">P0123</label>
+
+            <input type="text" name="accountingCode" class="form-control forUpdatedis txtData" value="P0123">
         </div>
         <div class="col-sm-4">
         </div>
@@ -50,8 +48,8 @@ import React from "react";
     <div class="form-group">
         <label class="control-label col-sm-3" for="status">Status :</label>
         <div class="col-sm-5">
-            <select name="status" class="forUpdate"><option selected="selected">Active</option><option selected="selected">Inactive</option></select>
-            <label class="lblData forView">Active</label>
+            <select name="status" class="form-control forUpdatedis"><option selected="selected">Active</option><option selected="selected">Inactive</option></select>
+            
         </div>
         <div class="col-sm-4">
             <input type="button" value="Edit" class="btnEdit forView" />
@@ -61,9 +59,9 @@ import React from "react";
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3">Batch</label>
+        <label class="control-label col-sm-3" for="batch">Batch</label>
         <div class="col-sm-5">
-            <label class="lblData">Partner 1</label>
+            <input type="text" name="batch" class="form-control forUpdatedis txtData" value="Partner 1">
         </div>
         <div class="col-sm-4">
         </div>
@@ -72,8 +70,7 @@ import React from "react";
     <div class="form-group">
         <label class="control-label col-sm-3" for="receiptName">Partner Name to appear on receipt:</label>
         <div class="col-sm-5">
-            <input type="text" name="receiptName" class="form-control forUpdate txtData" value="PARTNER1">
-            <label class="lblData forView">PARTNER1</label>
+            <input type="text" name="receiptName" class="form-control forUpdatedis txtData" value="PARTNER1">
         </div>
         <div class="col-sm-4">
             <input type="button" value="Edit" class="btnEdit forView" />
@@ -84,8 +81,7 @@ import React from "react";
     <div class="form-group">
         <label class="control-label col-sm-3" for="minAmount">Minimum Amount :</label>
         <div class="col-sm-5">
-            <input type="text" name="minAmount" class="form-control forUpdate txtData" value="0">
-            <label class="lblData forView">0</label>
+            <input type="text" name="minAmount" class="form-control forUpdatedis txtData" value="0">
         </div>
         <div class="col-sm-4">
             <input type="button" value="Edit" class="btnEdit forView" />
@@ -96,8 +92,7 @@ import React from "react";
     <div class="form-group">
         <label class="control-label col-sm-3" for="maxAmount">Maximum Amount :</label>
         <div class="col-sm-5">
-            <input type="text" name="maxAmount" class="form-control forUpdate txtData" value="100">
-            <label class="lblData forView">100</label>
+            <input type="text" name="maxAmount" class="form-control forUpdatedis txtData" value="100">
         </div>
         <div class="col-sm-4">
             <input type="button" value="Edit" class="btnEdit forView" />

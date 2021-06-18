@@ -12,14 +12,17 @@
 
 $(document).ready(function () {
     $('.forUpdate').hide();
+    $('.forUpdatedis').prop("disabled", true);
+
     $('.btnEdit').click(function () {
-        console.log($(this).parent().html());
         $(this).parent().find('.forView').hide();
         $(this).parent().find('.forUpdate').show();
-
+        
 
         $(this).parent().parent().find('.col-sm-5').find('.forView').hide();
         $(this).parent().parent().find('.col-sm-5').find('.forUpdate').show();
+        $(this).parent().parent().find('.col-sm-5').find('.forUpdatedis').prop("disabled", false);
+        $(this).parent().parent().find('.col-sm-8').find('.forUpdatedis').prop("disabled", false);
         //$('#lblBill').hide();
         //$('#txtBill').show();
         //$('#btnSaveBill').show();
@@ -34,6 +37,8 @@ $(document).ready(function () {
 
         $(this).parent().parent().find('.col-sm-5').find('.forView').show();
         $(this).parent().parent().find('.col-sm-5').find('.forUpdate').hide();
+        $(this).parent().parent().find('.col-sm-5').find('.forUpdatedis').prop('disabled', true);
+        $(this).parent().parent().find('.col-sm-8').find('.forUpdatedis').prop('disabled', true);
     });
 
 
@@ -44,5 +49,7 @@ $(document).ready(function () {
 
         $(this).parent().parent().find('.col-sm-5').find('.forView').show();
         $(this).parent().parent().find('.col-sm-5').find('.forUpdate').hide();
+        $(this).parent().parent().find('.col-sm-5').find('.forUpdatedis').prop('disabled', true);
+        $(this).parent().parent().find('.col-sm-8').find('.forUpdatedis').prop('disabled', true);
     });
 });
