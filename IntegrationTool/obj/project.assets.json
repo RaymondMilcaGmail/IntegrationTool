@@ -8524,23 +8524,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\raymo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Z\\IntegrationTool\\IntegrationTool\\IntegrationTool.csproj",
+      "projectUniqueName": "D:\\PJ Lhuiller\\Git\\IntegrationTool\\IntegrationTool\\IntegrationTool.csproj",
       "projectName": "IntegrationTool",
-      "projectPath": "C:\\Z\\IntegrationTool\\IntegrationTool\\IntegrationTool.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Z\\IntegrationTool\\IntegrationTool\\obj\\",
+      "projectPath": "D:\\PJ Lhuiller\\Git\\IntegrationTool\\IntegrationTool\\IntegrationTool.csproj",
+      "packagesPath": "C:\\Users\\raymo\\.nuget\\packages\\",
+      "outputPath": "D:\\PJ Lhuiller\\Git\\IntegrationTool\\IntegrationTool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\raymo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8555,8 +8555,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Z\\IntegrationTool\\IntegrationTool.Model\\IntegrationTool.Model.csproj": {
-              "projectPath": "C:\\Z\\IntegrationTool\\IntegrationTool.Model\\IntegrationTool.Model.csproj"
+            "D:\\PJ Lhuiller\\Git\\IntegrationTool\\IntegrationTool.Model\\IntegrationTool.Model.csproj": {
+              "projectPath": "D:\\PJ Lhuiller\\Git\\IntegrationTool\\IntegrationTool.Model\\IntegrationTool.Model.csproj"
             }
           }
         }
@@ -8598,7 +8598,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
