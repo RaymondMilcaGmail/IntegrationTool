@@ -4,5 +4,140 @@
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
 
-<h1>Section4</h1>
 
+
+@section JavaScript
+{
+    <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+}
+<div><h2>Partner 1</h2></div>
+
+<h1>Section 4: Report Requirements</h1>
+
+<form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="status">Report Format:</label>
+        <div class="col-sm-5">
+            <select name="status" class="form-control forUpdatedis">
+                <option selected="selected" value="excel">excel</option>
+                <option value="txt">txt</option>
+                <option value="csv">csv</option>
+                <option value="bat">bat</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="billerName">File Name:</label>
+        <div class="col-sm-5">
+            <input type="text" name="reportFileName" class="form-control forUpdatedis txtData" value="Filename1">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="reportFileName">Generation Time:</label>
+        <div class="col-sm-5">
+            <input type="text" name="reportFileName" class="form-control forUpdatedis txtData" value="01:00:00">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="status">SFTP Enabled:</label>
+        <div class="col-sm-5">
+            <select name="status" class="form-control forUpdatedis">
+                <option selected="selected" value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="hostedBy">Hosted By:</label>
+        <div class="col-sm-5">
+            <input type="text" name="hostedBy" class="form-control forUpdatedis txtData" value="Partner">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="ipAddressPort">IP Address/Port:</label>
+        <div class="col-sm-5">
+            <input type="text" name="ipAddressPort" class="form-control forUpdatedis txtData" value="">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="emailEnabled">Email Enabled:</label>
+        <div class="col-sm-5">
+            <select name="emailEnabled" class="form-control forUpdatedis">
+                <option selected="selected" value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="emailTo">Email Recipient To:</label>
+        <div class="col-sm-5">
+            <input type="text" name="emailTo" class="form-control forUpdatedis txtData" value="accounting@123finance.com">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="emailTo">Email Recipient CC:</label>
+        <div class="col-sm-5">
+            <input type="text" name="emailTo" class="form-control forUpdatedis txtData" value="accounting@123finance.com,accounting@456finance.com">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 pull-right">
+            <a class="form-control btn btn-default" href="/Partner/Section3" style="width:300px;">Prev</a>
+            <a class="form-control btn btn-default" href="/Partner/Section5" style="width:300px;">Next</a>
+        </div>
+    </div>
+</form>

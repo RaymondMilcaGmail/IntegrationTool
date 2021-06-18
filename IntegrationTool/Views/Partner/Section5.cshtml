@@ -4,5 +4,74 @@
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
 
-<h1>Section5</h1>
+@section JavaScript
+{
+    <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+}
+<div><h2>Partner 1</h2></div>
 
+<h1>Section 5: Fees</h1>
+
+<form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="sffeeType">Fee Type:</label>
+        <div class="col-sm-5">
+            <select name="sffeeType" class="form-control forUpdatedis">
+                <option selected="selected" value="fixed">Fixed</option>
+                <option value="tiered">Tiered</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="serviceFee">Service Fee:</label>
+        <div class="col-sm-5">
+            <input type="text" name="serviceFee" class="form-control forUpdatedis txtData" value="5.00">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+    <br /><br />
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="cffeeType">Fee Type:</label>
+        <div class="col-sm-5">
+            <select name="cffeeType" class="form-control forUpdatedis">
+                <option selected="selected" value="tiered">Tiered</option>
+                <option value="fixed">Fixed</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="convenienceFee">Convenience Fee:</label>
+        <div class="col-sm-5">
+            <input type="text" name="convenienceFee" class="form-control forUpdatedis txtData" value="2500 – 50,000">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 pull-right">
+            <a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Prev</a>
+            <a class="form-control btn btn-default" href="/Partner/Section6" style="width:300px;">Next</a>
+        </div>
+    </div>
+</form>
