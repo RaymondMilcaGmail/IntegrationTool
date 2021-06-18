@@ -3,6 +3,80 @@
     ViewData["Title"] = "Section6";
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
+@section JavaScript
+{
+    <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+}
+<div><h2>Partner 1</h2></div>
 
-<h1>Section6</h1>
+<h1>Section 6: Status Per Channel</h1>
 
+<form class="form-horizontal" action="/action_page.php">
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="ddliClick">iClick:</label>
+        <div class="col-sm-5">
+            <select name="ddliClick" class="form-control forUpdatedis">
+                <option selected="selected" value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="ddlPeralink">Peralink:</label>
+        <div class="col-sm-5">
+            <select name="ddlPeralink" class="form-control forUpdatedis">
+                <option selected="selected" value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="ddlSST">Self-Service Terminal:</label>
+        <div class="col-sm-5">
+            <select name="ddlSST" class="form-control forUpdatedis">
+                <option selected="selected" value="inactive">Inactive</option>
+                <option value="active">Active</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="ddlEcebuan2">ECebuana 2:</label>
+        <div class="col-sm-5">
+            <select name="ddlEcebuan2" class="form-control forUpdatedis">
+                <option selected="selected" value="inactive">Inactive</option>
+                <option value="active">Active</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 pull-right">
+            <a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Prev</a>
+            <a class="form-control btn btn-default" href="/Partner/PartnerList" style="width:300px;">Next</a>
+        </div>
+    </div>
+</form>
