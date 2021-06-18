@@ -4,5 +4,119 @@
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
 
-<h1>Section2</h1>
+@section JavaScript
+{
+    <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+}
+<div><h2>Partner 1</h2></div>
 
+<h1>Section2: Required Fields</h1>
+
+<form class="form-horizontal" >
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="fieldName">Field Name:</label>
+        <div class="col-sm-5">
+            <input type="text" name="fieldName" class="form-control forUpdate txtData" value="Field name">
+            <label class="lblData forView">Field name</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="controlType">Control Type :</label>
+        <div class="col-sm-5">
+            <select name="controlType" class="forUpdate">
+                <option selected="selected">Text</option>
+                <option>Dropdown</option>
+                <option>Datepicker</option>
+            </select>
+            <label class="lblData forView">Control Type</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="minCharacters">Min Characters :</label>
+        <div class="col-sm-5">
+            <input type="text" name="minCharacters" class="form-control forUpdate txtData" value="0">
+            <label class="lblData forView">0</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="maxCharacters">Max Characters :</label>
+        <div class="col-sm-5">
+            <input type="text" name="maxCharacters" class="form-control forUpdate txtData" value="100">
+            <label class="lblData forView">100</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="composition">Composition :</label>
+        <div class="col-sm-5">
+            <select name="composition"  class="forUpdate">
+                <option selected="selected">Numeric</option>
+                <option>Alphanumeric</option>
+                <option>Pure Numeric</option>
+            </select>
+            <label class="lblData forView">Numeric</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="prefix">Prefix :</label>
+        <div class="col-sm-5">
+            <input type="text" name="fieldName" class="form-control forUpdate txtData" value="S, P, T">
+            <label class="lblData forView">S, P, T</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="receiptName">Tester :</label>
+        <div class="col-sm-5">
+            <input type="text" name="receiptName" class="form-control txtData" value="">
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Validate" class="btnEdit" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <a class="form-control btn btn-default" style="width:300px;">Delete Field</a>
+            <a class="form-control btn btn-default" style="width:300px;">Add Field</a>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <a class="form-control btn btn-default" style="width:300px;" href="/Partner/Section3">Submit Section For Approval</a>
+        </div>
+    </div>
+</form>

@@ -4,5 +4,43 @@
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
 
-<h1>Section3</h1>
+@section JavaScript
+{
+    <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+}
+<div><h2>Partner 1</h2></div>
 
+<h1>Section3: Biller Reminders</h1>
+
+<form class="form-horizontal" >
+
+
+    <div class="form-group">
+        <h2>Reminders to be Placed:</h2>
+        <div class="col-sm-8">
+            <textarea style="width:100%; min-height:300px;">1. Paragraphs
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+2. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</textarea>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <input type="button" value="Edit" class="btnEdit forView" />
+                <input type="button" value="Save" class="btnSave forUpdate" />
+                <input type="button" value="Cancel" class="btnCancel forUpdate" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <a class="form-control btn btn-default" style="width:300px;" href="/Partner/Section4">Submit Section For Approval</a>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 pull-right">
+            <a class="form-control btn btn-default" href="/Partner/Section2" style="width:300px;">Prev</a>
+            <a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Next</a>
+        </div>
+    </div>
+</form>
