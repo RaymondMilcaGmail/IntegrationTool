@@ -4,5 +4,109 @@
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
 
-<h1>Section1</h1>
 
+
+@section JavaScript
+{
+    <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+}
+<div><h2>Partner 1</h2></div>
+
+<h1>Section1: Partner1, P0123 ,Active</h1>
+
+<form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="email">Auxiliary Product:</label>
+        <div class="col-sm-5">
+            <label class="lblData">Bills Payment</label>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="billerName">Biller Name:</label>
+        <div class="col-sm-5">
+            <input type="text" name="billerName" class="form-control forUpdate txtData" value="Partner 1">
+            <label class="lblData forView">Partner 1</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView"  />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Accounting Code :</label>
+        <div class="col-sm-5">
+            <label class="lblData">P0123</label>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="status">Status :</label>
+        <div class="col-sm-5">
+            <select name="status" class="forUpdate"><option selected="selected">Active</option><option selected="selected">Inactive</option></select>
+            <label class="lblData forView">Active</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Batch</label>
+        <div class="col-sm-5">
+            <label class="lblData">Partner 1</label>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="receiptName">Partner Name to appear on receipt:</label>
+        <div class="col-sm-5">
+            <input type="text" name="receiptName" class="form-control forUpdate txtData" value="PARTNER1">
+            <label class="lblData forView">PARTNER1</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="minAmount">Minimum Amount :</label>
+        <div class="col-sm-5">
+            <input type="text" name="minAmount" class="form-control forUpdate txtData" value="0">
+            <label class="lblData forView">0</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="maxAmount">Maximum Amount :</label>
+        <div class="col-sm-5">
+            <input type="text" name="maxAmount" class="form-control forUpdate txtData" value="100">
+            <label class="lblData forView">100</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="button" value="Edit" class="btnEdit forView" />
+            <input type="button" value="Save" class="btnSave forUpdate" />
+            <input type="button" value="Cancel" class="btnCancel forUpdate" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <a class="form-control btn btn-default" style="width:300px;" href="/Partner/Section2">Submit For Approval</a>
+        </div>
+    </div>
+</form>
