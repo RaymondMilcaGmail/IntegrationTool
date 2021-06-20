@@ -8,12 +8,22 @@
 @section JavaScript
 {
     <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+    <script>
+        $("#sidenav li").each(function () {
+            if ($(this).data("link") == "partner_list") {
+                $(this).addClass("active");
+            }
+            else {
+                $(this).removeClass("active");
+            }
+        });
+    </script>
 }
-<div><h2>Partner 1</h2></div>
-
-<h1>Section1: Partner1, P0123 ,Active</h1>
-
-<form class="form-horizontal" >
+<h1 class="page-header">
+    Partner 1
+    <p><small>Section1: Partner1, P0123 ,Active</small></p>
+</h1>
+<form class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-sm-3" for="email">Auxiliary Product:</label>
         <div class="col-sm-5">
@@ -29,7 +39,7 @@
             <input type="text" name="billerName" class="form-control forUpdatedis txtData" value="Partner 1">
         </div>
         <div class="col-sm-4">
-            <input type="button" value="Edit" class="btnEdit forView"  />
+            <input type="button" value="Edit" class="btnEdit forView" />
             <input type="button" value="Save" class="btnSave forUpdate" />
             <input type="button" value="Cancel" class="btnCancel forUpdate" />
         </div>
@@ -38,7 +48,6 @@
     <div class="form-group">
         <label class="control-label col-sm-3" for="accountingCode">Accounting Code :</label>
         <div class="col-sm-5">
-
             <input type="text" name="accountingCode" class="form-control forUpdatedis txtData" value="P0123">
         </div>
         <div class="col-sm-4">
@@ -49,7 +58,7 @@
         <label class="control-label col-sm-3" for="status">Status :</label>
         <div class="col-sm-5">
             <select name="status" class="form-control forUpdatedis"><option selected="selected">Active</option><option selected="selected">Inactive</option></select>
-            
+
         </div>
         <div class="col-sm-4">
             <input type="button" value="Edit" class="btnEdit forView" />

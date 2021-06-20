@@ -3,42 +3,63 @@
     ViewData["Title"] = "My Requests";
     Layout = "~/Views/Shared/_Partner.cshtml";
 }
+@section JavaScript
+{
+    <script>
+        $("#sidenav li").each(function () {
+            if ($(this).data("link") == "for_approval") {
+                $(this).addClass("active");
+            }
+            else {
+                $(this).removeClass("active");
+            }
+        });
 
-<h1>For Approval</h1>
+    </script>
+}
+<h1 class="page-header">For Approval</h1>
 
 <div>
     <span>Active</span>
-    <div style="border: 1px solid black; width:80%;">
-        <table class="table table-borderless table-condensed">
+    <table class="table table-condensed table-striped custom-table">
+        <thead>
+            <tr>
+                <th colspan="4">Active</th>
+            </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>Add Partner 1</td>
                 <td>User 1</td>
                 <td>For Approval - CTIPD</td>
-                <td><a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Details</a></td>
+                <td><a class=" btn btn-default" href="/Partner/Section4"><span class="glyphicon glyphicon-eye-open mr-5"></span>Details</a></td>
             </tr>
             <tr>
                 <td>Edit Partner 2</td>
                 <td>User 2</td>
                 <td>For Approval - CTIPD</td>
-                <td><a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Details</a></td>
+                <td><a class=" btn btn-default" href="/Partner/Section4"><span class="glyphicon glyphicon-eye-open mr-5"></span>Details</a></td>
             </tr>
-        </table>
-    </div>
-    <br /><br />
-    <span>History</span>
-    <div style="border: 1px solid black; width:80%;">
-        <table class="table table-borderless table-condensed">
+        </tbody>
+    </table>
+    <table class="table table-condensed table-striped custom-table">
+        <thead>
+            <tr>
+                <th colspan="3">History</th>
+            </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>Add Partner 2</td>
                 <td>Executed</td>
-                <td><a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Details</a></td>
+                <td><a class=" btn btn-default" href="/Partner/Section4"><span class="glyphicon glyphicon-eye-open mr-5"></span>Details</a></td>
             </tr>
             <tr>
                 <td>Edit Partner 3</td>
                 <td>Executed</td>
-                <td><a class="form-control btn btn-default" href="/Partner/Section4" style="width:300px;">Details</a></td>
+                <td><a class=" btn btn-default" href="/Partner/Section4"><span class="glyphicon glyphicon-eye-open mr-5"></span>Details</a></td>
             </tr>
-        </table>
-    </div>
+        </tbody>
+    </table>
 
 </div>

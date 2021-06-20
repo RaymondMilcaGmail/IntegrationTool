@@ -7,10 +7,24 @@
 @section JavaScript
 {
     <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+    <script>
+        $("#sidenav li").each(function () {
+            if ($(this).data("link") == "partner_list") {
+                $(this).addClass("active");
+            }
+            else {
+                $(this).removeClass("active");
+            }
+        });
+    </script>
 }
-<div><h2>Partner 1</h2></div>
+<h1 class="page-header">
+    Partner 1
+    <p>
+        <small>Section 5: Fees</small>
+    </p>
+</h1>
 
-<h1>Section 5: Fees</h1>
 
 <form class="form-horizontal" action="/action_page.php">
     <div class="form-group">

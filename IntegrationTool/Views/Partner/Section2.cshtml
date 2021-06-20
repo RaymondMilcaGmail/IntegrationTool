@@ -7,12 +7,24 @@
 @section JavaScript
 {
     <script type="text/javascript" src="@Url.Content("/js/Section1.js")"></script>
+    <script>
+        $("#sidenav li").each(function () {
+            if ($(this).data("link") == "partner_list") {
+                $(this).addClass("active");
+            }
+            else {
+                $(this).removeClass("active");
+            }
+        });
+    </script>
 }
-<div><h2>Partner 1</h2></div>
+<h1 class="page-header">
+    Partner 1
+    <p><small>Section2: Required Fields</small></p>
+</h1>
 
-<h1>Section2: Required Fields</h1>
 
-<form class="form-horizontal" >
+<form class="form-horizontal">
 
     <div class="form-group">
         <label class="control-label col-sm-3" for="fieldName">Field Name:</label>
@@ -68,7 +80,7 @@
     <div class="form-group">
         <label class="control-label col-sm-3" for="composition">Composition :</label>
         <div class="col-sm-5">
-            <select name="composition"  class="form-control forUpdatedis">
+            <select name="composition" class="form-control forUpdatedis">
                 <option selected="selected">Numeric</option>
                 <option>Alphanumeric</option>
                 <option>Pure Numeric</option>

@@ -7,10 +7,20 @@
 @section JavaScript
 {
     <script type="text/javascript" src="@Url.Content("/js/PartnerList.js")"></script>
+    <script>
+        $("#sidenav li").each(function () {
+            if ($(this).data("link") == "partner_list") {
+                $(this).addClass("active");
+            }
+            else {
+                $(this).removeClass("active");
+            }
+        });
+    </script>
 }
 
-<h1>PartnerList</h1>
-<table class="table">
+<h1 class="page-header">Partner List</h1>
+<table class="table table-condensed table-striped custom-table">
     <thead>
         <tr>
             <th scope="col">Partner Name</th>
@@ -28,7 +38,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
         <tr>
             <td>Partner 1</td>
@@ -36,7 +46,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
         <tr>
             <td>Partner 1</td>
@@ -44,7 +54,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
         <tr>
             <td>Partner 1</td>
@@ -52,7 +62,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
         <tr>
             <td>Partner 1</td>
@@ -60,7 +70,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
         <tr>
             <td>Partner 1</td>
@@ -68,7 +78,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
         <tr>
             <td>Partner 1</td>
@@ -76,7 +86,7 @@
             <td>Active</td>
             <td>Bills Payment</td>
             <td>Batch</td>
-            <td><a class="form-control btn btn-default" href="/Partner/Section1">View Details</a></td>
+            <td><a class=" btn btn-default" href="/Partner/Section1"><span class="glyphicon glyphicon-eye-open mr-5"></span>View Details</a></td>
         </tr>
     </tbody>
 </table>

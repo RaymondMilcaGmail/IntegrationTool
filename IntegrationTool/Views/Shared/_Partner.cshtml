@@ -7,49 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewBag.Title</title>
     <link href="~/lib/bootstrap3/css/bootstrap.css" rel="stylesheet" />
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap3/js/bootstrap.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="~/css/custom.css" rel="stylesheet" />
 </head>
 <body>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 200px;
-            background-color: #f1f1f1;
-        }
+    <nav class="navbar navbar-inverse" id="main_nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-link" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Integral Tools</a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-link">
+                <ul class="nav navbar-nav  pull-right-sm">
+                    <li><a href="#"><span class="glyphicon glyphicon-cog mr-5"></span>Account Settings</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out mr-5"></span>Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" id="sidebar">
+                <ul class="nav nav-pills nav-stacked" id="sidenav">
+                    <li data-link="partner_list"><a href="/Partner/PartnerList">Partner List</a></li>
+                    <li data-link="add_partner"><a href="/Partner/PartnerList">Add Partner</a></li>
+                    <li data-link="my_request"><a href="/User/MyRequests">My Requests</a></li>
+                    <li data-link="for_approval"><a href="/User/ForApprovals">For Approval</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9" id="main_content">
+                @RenderBody()
 
-        li a {
-            display: block;
-            color: #000;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-            /* Change the link color on hover */
-            li a:hover {
-                background-color: #555;
-                color: white;
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap3/js/bootstrap.js"></script>
+    @RenderSection("JavaScript", required: false)
+    <script>
+        $(window).resize(function () {
+            if ($(window).width() < 614) {
+                $("#nav-link .nav").removeClass("pull-right-sm");
             }
-    </style>
-    <div class="col-md-3">
-        <ul>
-            <li><a href="/Partner/PartnerList">Partner List</a></li>
-            <li><a href="/Partner/PartnerList">Add Partner</a></li>
-            <li><a href="/User/MyRequests">My Requests</a></li>
-            <li><a href="/User/ForApprovals">For Approval</a></li>
-        </ul>
-    </div>
-    <div class="container col-md-9">
-        @RenderBody()
-        @RenderSection("JavaScript", required: false)
-    </div>
+            else {
+                $("#nav-link .nav").addClass("pull-right-sm");
+            }
+        });
+    </script>
+
 </body>
 </html>
