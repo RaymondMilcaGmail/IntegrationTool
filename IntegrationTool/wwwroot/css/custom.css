@@ -49,6 +49,13 @@ color:#fff!important;
 .btn {
     min-width:100px!important;
 }
+.btnGroup {
+width:210px;
+margin:0 auto;
+}
+h3 {
+    margin-left: 15px;
+}
 /*SIDEBAR*/
 #sidebar {
     min-height: calc(100vh - 50px);
