@@ -154,3 +154,5 @@ D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool\obj\Debug\netcoreapp3.1\Razor
 D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool\obj\Debug\netcoreapp3.1\Razor\Views\Partner\Section4.cshtml.g.cs
 D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool\obj\Debug\netcoreapp3.1\Razor\Views\Partner\Section5.cshtml.g.cs
 D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool\obj\Debug\netcoreapp3.1\Razor\Views\Partner\Section6.cshtml.g.cs
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool\obj\Debug\netcoreapp3.1\Razor\Views\User\ForApprovals.cshtml.g.cs
+D:\PJ Lhuiller\Git\IntegrationTool\IntegrationTool\obj\Debug\netcoreapp3.1\Razor\Views\User\MyRequests.cshtml.g.cs
